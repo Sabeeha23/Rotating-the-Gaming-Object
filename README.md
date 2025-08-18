@@ -1,5 +1,9 @@
 # Rotating-the-Gaming-Object
 
+### Developed by : Sabeeha Shaik
+
+### Register Number : 212223230176
+
 ## Aim:
 To develop a 3D application for rotating the gaming objects in unity.
 ## Algorithm:
@@ -37,7 +41,31 @@ To add our C# Script file to our selected object, click on the C# Script file an
 Stop
 
 ## Program:
+```
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class Rotate : MonoBehaviour
+{
+    // Start is called before the first frame update
+    void Start()
+    {
+        
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        transform.RotateAround(Vector3.up,Vector3.left,40*Time.deltaTime);
+    }
+}
+```
 
 ## Output:
 
+<img width="1866" height="826" alt="image" src="https://github.com/user-attachments/assets/919ecf48-ec84-4150-aef2-0a03f182a897" />
+
+
 ## Result:
+The 3D application for rotating the gaming objects in unity is executed sucessfully.
