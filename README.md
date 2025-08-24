@@ -48,7 +48,7 @@ using UnityEngine;
 
 public class Rotate : MonoBehaviour
 {
-    // Start is called before the first frame update
+    // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         
@@ -57,14 +57,15 @@ public class Rotate : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.RotateAround(Vector3.up,Vector3.left,40*Time.deltaTime);
+        transform.RotateAround(Vector3.left,Vector3.up,40*Time.deltaTime);
     }
 }
 ```
 
 ## Output:
 
-<img width="1908" height="862" alt="image" src="https://github.com/user-attachments/assets/dc455f82-613d-4b87-af04-01677fd72255" />
+<img width="1915" height="883" alt="image" src="https://github.com/user-attachments/assets/10f86b96-a35f-481e-8ebf-e553900f62ec" />
+
 
 
 
